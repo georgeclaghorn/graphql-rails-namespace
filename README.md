@@ -72,7 +72,7 @@ module Foo
   class Application < Rails::Application
     # ...
 
-    config.graphql.namespace = module ::MyGraph; self; end
+    config.graphql.namespace = ::MyGraph = Module.new
   end
 end
 ```
