@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.homepage = "https://github.com/georgeclaghorn/graphql-rails-namespace"
   s.license  = "MIT"
 
-  s.required_ruby_version = ">= 3.0.0"
+  s.required_ruby_version = ">= 2.5.0"
 
   s.add_dependency "railties", ">= 6.1.0"
 
