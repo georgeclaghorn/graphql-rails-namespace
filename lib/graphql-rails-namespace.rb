@@ -14,15 +14,12 @@ class GraphQLRailsNamespace < Rails::Railtie
   end
 
   initializer :autoload_from_graphql_path do
-    Rails.autoloaders.main.push_dir full_graphql_path, namespace: namespace
+    Rails.autoloaders.main.push_dir full_graphql_path,
+      namespace: config.graphql.namespace.try(:call) || config.graphql.namespace
   end
 
   private
     def full_graphql_path
       "#{Rails.root}/#{config.graphql.path}"
-    end
-
-    def namespace
-      config.graphql.namespace.try(:call) || config.graphql.namespace
     end
 end
