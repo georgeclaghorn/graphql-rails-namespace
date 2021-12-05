@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name     = "graphql-rails-namespace"
-  s.version  = "1.0.0"
+  s.version  = "1.0.1"
   s.authors  = "George Claghorn"
   s.email    = "georgeclaghorn@gmail.com"
   s.summary  = "Namespace GraphQL-related constants in Rails apps"
